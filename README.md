@@ -1,4 +1,4 @@
-# iit_bombay_esim_marathon_rtl_nor_circuit
+# Resistor-Transistor logic NOR Circuit
 
 
 
