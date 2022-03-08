@@ -1,0 +1,26 @@
+* c:\users\my\desktop\prakash\prakash.cir
+
+.include NPN.lib
+v3  vbin gnd pulse(0Amps 2Amps 0us 1us 1us 2ms 4ms)
+v1  vain gnd pulse(0V 2Amps 0us 1us 1us 1ms 2ms)
+* u1  vain plot_v1
+* u2  vbin plot_v1
+* u3  voutput plot_v1
+q2 voutput net-_q2-pad2_ gnd Q2N2222
+q1 voutput net-_q1-pad2_ gnd Q2N2222
+v2 net-_r2-pad2_ gnd  dc 2Amps
+r1  vain net-_q1-pad2_ esim_r
+r3  vbin net-_q2-pad2_ esim_r
+r2  voutput net-_r2-pad2_ esim_r
+.tran 2e-03 20e-03 0e-03
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(vain)
+plot v(vbin)
+plot v(voutput)
+.endc
+.end

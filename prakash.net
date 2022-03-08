@@ -1,0 +1,46 @@
+( { EESchema Netlist Version 1.1 created  3/7/2022 9:10:15 PM }
+ ( /5D04B522 R1  v3 pulse
+  (    1 Vbin )
+  (    2 GND )
+ )
+ ( /5D04B823 R1  v1 pulse
+  (    1 Vain )
+  (    2 GND )
+ )
+ ( /5D04BE80 $noname  U1 plot_v1
+  (    ~ Vain )
+ )
+ ( /5D04BEF9 $noname  U2 plot_v1
+  (    ~ Vbin )
+ )
+ ( /5D04BF7D $noname  U3 plot_v1
+  (    ~ Voutput )
+ )
+ ( /6226D862 $noname  Q2 eSim_NPN
+  (    1 Voutput )
+  (    2 Net-(Q2-Pad2) )
+  (    3 GND )
+ )
+ ( /6226D930 $noname  Q1 eSim_NPN
+  (    1 Voutput )
+  (    2 Net-(Q1-Pad2) )
+  (    3 GND )
+ )
+ ( /6226E1FE R1  v2 DC
+  (    1 Net-(R2-Pad2) )
+  (    2 GND )
+ )
+ ( /6226E745 $noname  R1 eSim_R
+  (    1 Vain )
+  (    2 Net-(Q1-Pad2) )
+ )
+ ( /6226E881 $noname  R3 eSim_R
+  (    1 Vbin )
+  (    2 Net-(Q2-Pad2) )
+ )
+ ( /6226E8F2 $noname  R2 eSim_R
+  (    1 Voutput )
+  (    2 Net-(R2-Pad2) )
+ )
+)
+*
